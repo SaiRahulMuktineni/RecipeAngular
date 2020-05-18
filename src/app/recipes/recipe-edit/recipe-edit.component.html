@@ -1,0 +1,7 @@
+<!--<p>recipe-edit works!</p>-->
+<!--<app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadedFeature === 'shopping-list'"></app-shopping-list>-->
+<p *ngIf="editMode === false; else editPara"> Let's create a New Recipe ! </p>
+<ng-template #editPara>
+  <p> Edit this Recipe ! </p>
+</ng-template>
